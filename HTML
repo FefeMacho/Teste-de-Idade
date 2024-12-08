@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Atividade 1 - Javascript</title>
+
+		<style type="text/css">@keyframes colorChange {0% { color: blue; }25% { color: blueviolet; }50% { color: purple; }75% { color: hotpink; }100% { color: royalblue; }}.animated-text {;animation: colorChange 4s infinite;}</style>
+
+
+
+
+
+		<style type="text/css">
+			body {
+				padding: 20px;
+					font-family: system-ui;
+				background-attachment: scroll;
+				background-size: cover;
+				background-image: url(imagens/testea.jpg);
+			}
+
+			#topo {
+					opacity: 85%;
+					background-color: white;
+					text-align: center;
+					padding-bottom: 8px;
+					padding-top: 1px;
+					margin: 0;
+					 box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+			}
+
+		h1{
+			color: #81bddd ;
+				margin: 0;
+			}
+				/*final do topo*/
+
+		#container {
+      opacity: 90%;
+      max-width: 750px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+
+
+		</style>
+	</head>
+	<body>
+						<div id="topo">
+			<img src="imagens/velho.png" width="220" height="150">
+					<h1>TESTE DA FAIXA ETARIA</h1>
+		<h4 class="animated-text">- ESTE É UM SITE PARA SABER SE VOCE É VELHO -</h4>
+
+							</div>
+<br>
+						<div id="container">
+							<script>
+			var idade = prompt('Digite sua Idade ae Mano...')
+
+							if (idade <= 15) {
+								document.write('Seu moleque (Criança)')
+							}
+							if (idade <= 30 && idade > 15) {
+								document.write("Corsa ja ta na metade do Financiamento (jovem)")
+							}
+							if (idade <= 60 && idade > 30) {
+								document.write("Calvice (adulto)")
+							}
+							if (idade <=120 && idade > 60) {
+								document.write('Terror do INSS(Velho)') }
+							</script>
+							
+							<hr>
+
+							<script type="text/javascript">
+							
+								if (idade <= 15) {
+								document.write('<img src="imagens/crianca.jpg">')
+							}
+							if (idade <= 30 && idade > 15) {
+								document.write('<img src="imagens/jovem.jpg">)')
+							}
+							if (idade <= 60 && idade > 30) {
+								document.write('<img src="imagens/adulto.jpg">')
+							}
+							if (idade <=120 && idade > 60) {
+								document.write('<img src="imagens/idoso.jpg" >') }
+							
+							</script>
+							</div>
+	</body>
+</html>
